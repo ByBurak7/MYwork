@@ -1,0 +1,1514 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    height: 40px;
+    display: flex;
+    background-color: #5abfab;
+    justify-content: space-between;
+}
+.nav-sol{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.nav-sag{
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.loc{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.gm{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+#fr{
+    margin-right: 10px;
+}
+.nav-sag i{
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-sag i:hover{
+    color: white;
+    transition: 0.4s;
+}
+.nav-sol i{
+    color: black;
+}
+.navbar{
+    height: 75px;
+    background-color: #f8f9fa;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.donate{
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo a{
+    align-self: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn{
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #5a6f80;
+    color: #5a6f80;
+    background: transparent;
+}
+.btn:hover{
+    background-color:#5abfab;
+    color: white;
+    transition:0.4s;
+    border: 0;
+}
+.menu a:hover{
+    color: #5abfab;
+}
+.resgen{
+    height: 650px;
+    display: flex;
+    background-image: url('res1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    transition: 0.6s;
+    align-items: center;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.sagalt{
+    height: auto;
+    color:#5a6f80;
+    font-weight: bold;
+    border-radius: 20px;
+    justify-content: center;
+    user-select: none;
+    font-size: 70px;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.sol{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    background-color:rgba(255, 255, 255, 0.3)
+}
+.sag{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    background-color:rgba(255, 255, 255, 0.3)
+}
+.sol i{
+    font-size: 45px;
+}
+.sol:hover{
+    background-color: white;
+}
+.sag:hover{
+    background-color: white;
+}
+.sag i{
+    font-size: 45px;
+}
+.resgen1{
+    height: 650px;
+    background-image: url('res2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    transition: 0.6s;
+    display: none;
+    align-items: center;
+    background-attachment: fixed;
+}
+.resgen2{
+    height: 650px;
+    display: none;
+    background-image: url('res3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    transition: 0.6s;
+    background-attachment: fixed;
+    align-items: center;
+}
+.altdon{
+    height: 480px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.ust{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alt{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.ust h2{
+    font-size: 50px;
+    text-align: center;
+    color: #5a6f80;
+}
+.one{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.one1{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.one2{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.one3{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.ust1{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alt1{
+    font-size: 25px;
+    display: flex;
+    color: #5abfab;
+    align-items: center;
+    justify-content: center;
+}
+.ust2{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alt2{
+    font-size: 25px;
+    display: flex;
+    color: #5abfab;
+    align-items: center;
+    justify-content: center;
+}
+.ust3{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alt3{
+    font-size: 25px;
+    display: flex;
+    color: #5abfab;
+    align-items: center;
+    justify-content: center;
+}
+.ust4{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alt4{
+    font-size: 25px;
+    display: flex;
+    color: #5abfab;
+    align-items: center;
+    justify-content: center;
+}
+.hand{
+    color: wheat;
+}
+.hand{
+    color: wheat;
+}
+.hand{
+    color: wheat;
+}
+.hand{
+    color: wheat;
+}
+.one:hover .hand{
+    transform: scale(0.8);
+    transition: 0.6s;
+}
+.one:hover .alt1{
+    margin-top: -20px;
+    transition: 0.6s;
+}
+.one:hover{
+    background-color: white;
+    box-shadow: 1px 1px 25px rgb(121, 121, 121);
+    transition: 0.6s;
+}
+
+.one1:hover .hand{
+    transform: scale(0.8);
+    transition: 0.6s;
+}
+.one1:hover .alt2{
+    margin-top: -20px;
+    transition: 0.6s;
+}
+.one1:hover{
+    background-color: white;
+    box-shadow: 1px 1px 25px rgb(121, 121, 121);
+    transition: 0.6s;
+}
+.one2:hover .hand{
+    transform: scale(0.8);
+    transition: 0.6s;
+}
+.one2:hover .alt3{
+    margin-top: -20px;
+    transition: 0.6s;
+}
+.one2:hover{
+    background-color: white;
+    box-shadow: 1px 1px 25px rgb(121, 121, 121);
+    transition: 0.6s;
+}
+.one3:hover .hand{
+    transform: scale(0.8);
+    transition: 0.6s;
+}
+.one3:hover .alt4{
+    margin-top: -20px;
+    transition: 0.6s;
+}
+.one3:hover{
+    background-color: white;
+    box-shadow: 1px 1px 25px rgb(121, 121, 121);
+    transition: 0.6s;
+}
+.info{
+    height: 100vh;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+.insol{
+    width: 48%;
+    height: 90%;
+    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    background-image: url('infores.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.insag{
+    width: 48%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.inust{
+    width: 90%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.inalt{
+    width: 90%;
+    height: 43%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.bas{
+    width: 90%;
+    height: 25%;
+    font-size: 45px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #5a6f80;
+}
+.altbas{
+    width: 90%;
+    height: 15%;
+    color: #5abfab;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.altacik{
+    width: 90%;
+    height: 45%;
+    font-size: 17px;
+    font-weight:300;
+    text-align: justify;
+    margin-top: 10px;
+}
+.altinsol{
+    width: 46%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight:300;
+    padding-left: 20px;
+    justify-content: center;
+}
+.altinsag{
+    width: 46%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.altinsol h2{
+    color: #5abfab;
+}
+.chek{
+    flex-direction: row;
+    width: 55%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.sayust{
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
+.sayalt{
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
+.rak{
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+.ko{
+    font-size: 18px;
+    margin-top: -40px;
+    color: rgb(172, 201, 201);
+}
+.kol{
+    font-size: 45px;
+    color: #5abfab;
+    font-weight: bold;
+}
+.basin{
+    height: 78vh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.basgen{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bassol{
+    width: 40%;
+    background-color: #5a6f80;
+    display: flex;
+    background-image: url('baskan.jpg');
+    background-size: cover;
+    box-shadow: 1px 1px 20px rgb(121, 121, 121);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px
+}
+.bassag{
+    width: 55%;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.ic{
+    width: 95%;
+    height: 80%;
+    flex-direction: column;
+    display: flex;
+}
+.ic h2{
+    font-size: 40px;
+}
+.ic h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 3px;
+    margin-top: -30px;
+}
+.ic p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.altsoc{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: 13%;
+    justify-content: space-around;
+}
+.altsoc i{
+    font-size: 20px;
+}
+.face{
+    background-color:black;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.face:hover{
+    background-color: aqua;
+    transition: 0.6s;
+}
+.tw:hover{
+    background-color: aqua;
+    transition: 0.6s;
+}
+.ins:hover{
+    background-color: aqua;
+    transition: 0.6s;
+}
+.tw{
+    background-color:black;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.ins{
+    background-color:black;
+    border-radius: 100%;
+    padding: 7px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cours{
+    height: 100vh;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.cours-bas{
+    width: 70%;
+    height: 10%;
+    align-items: center;
+    font-size: 50px;
+    color:#5a6f80;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.cours-ic{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.cou1{
+    width: 32%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.cou2{
+    width: 32%;
+    background-color: bisque;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+}
+.cou3{
+    width: 32%;
+    background-color: bisque;
+    flex-direction: column;
+    border-radius: 20px;
+    display: flex;
+}
+.cou1-ust{
+    width: 100%;
+    height: 50%;
+    background-image: url('group-african-kids-paying-attention-class.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+.cou1-alt{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-around;
+}
+.cou2-ust{
+    width: 100%;
+    height: 50%;
+    background-image: url('2.jpg');
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.cou2-alt{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-around;
+}
+.cou3-ust{
+    width: 100%;
+    height: 50%;
+    background-image: url('3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+.cou3-alt{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-around;
+}
+.altc1{
+    width: 90%;
+    height: 15%;
+    margin-top: 27px;
+    color:#5abfab;
+    font-size: 25px;
+    display: flex;
+}
+.altc2{
+    width: 90%;
+    height: 20%;
+    color:#5a6f80;
+    font-weight: 400;
+    display: flex;
+}
+.altc3{
+    width: 90%;
+    height: 20%;
+    color:#5abfab;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+.altc4{
+    width: 90%;
+    height: 18%;
+    color:#ffffff;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color:#5a6f80;
+}
+.altc4:hover{
+    background-color:#5abfab;
+    transition: 0.4s;
+}
+.cou1:hover{
+    box-shadow:3px 3px 20px black;
+    transition: 0.4s;
+}
+.cou2:hover{
+    box-shadow:3px 3px 20px black;
+    transition: 0.4s;
+}
+.cou3:hover{
+    box-shadow:3px 3px 20px black;
+    transition: 0.4s;
+}
+.c3ust{
+    width: 100%;
+    height: 16%;
+    border-radius: 20px;
+    display: flex;
+}
+.c4ust{
+    width: 100%;
+    height: 16%;
+    border-radius: 20px;
+    display: flex;
+}
+.c3alt{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    color: #5a6f80;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c3ic{
+    width: 70%;
+    background-color: #5abfab;
+    display: flex;
+    border-radius: 20px;
+}
+.c4ic{
+    width: 40%;
+    background-color: #5abfab;
+    display: flex;
+    border-radius: 20px;
+}
+.c5ust{
+    width: 100%;
+    height: 16%;
+    border-radius: 20px;
+    display: flex;
+}
+.c5ic{
+    width: 100%;
+    background-color: #5abfab;
+    display: flex;
+    border-radius: 20px;
+}
+.c3sol{
+    width: 30%;
+    height: 90%;
+    display: flex;
+}
+.c3sag{
+    width: 30%;
+    height: 90%;
+    display: flex;
+}
+.form1{
+    height: 100vh;
+    background-color: #5a6f80;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.formsol{
+    width: 45%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.formsag{
+    width: 50%;
+    height: 80%;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+.formbas{
+    width: 90%;
+    height: 15%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: flex-end;
+    display: flex;
+}
+.formgen{
+    width: 80%;
+    height: 65%;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 35px;
+    display: flex;
+}
+.formg1{
+    width: 90%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-self: left;
+    margin-left: -30px;
+    align-items: flex-end;
+    height: 10%;
+    display: flex;
+}
+.formg2{
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    display: flex;
+}
+.formg3{
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    display: flex;
+}
+.formg4{
+    width: 96%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5abfab;
+    display: flex;
+}
+.formg5{
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    height: 15%;
+    background-color:#5a6f80;
+    display: flex;
+}
+.us1{
+    width: 45%;
+    text-indent: 10px;
+    height: 50px;
+    background-color:#f0f8ff;
+    border-radius: 5px;
+    border: 0;
+}
+.us2{
+    width: 45%;
+    height: 50px;
+    text-indent: 10px;
+    background-color:#f0f8ff;
+    border-radius: 5px;
+    border: 0;
+}
+.us3{
+    width: 100%;
+    height: 100%;
+    text-indent: 5px;
+    font-size: 15px;
+    background-color:#f0f8ff;
+    border: 0;
+    border-radius: 5px;
+}
+.fust{
+    width: 30%;
+    height: 50%;
+    border-radius: 10%;
+    background-image: url('f.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.falt{
+    width: 50%;
+    flex-direction: column;
+    font-size: 20px;
+    height: 35%;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+.falt h2{
+    font-size: 30px;
+    color: white;
+}
+.footer{
+    height: 450px;
+    margin-top: 50px;
+    background-color:#44525d ;
+}
+.fotust{
+    height: 80%;
+    background-color: #44525d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+.fotalt{
+    height: 20%;
+    background-color: #5a6f80;
+    display: flex;
+    justify-content: space-between;
+}
+.f1{
+    width: 25%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    display: flex;
+}
+.f2{
+    width: 15%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    display: flex;
+}
+.f3{
+    width: 15%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+}
+.f4{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+}
+.logfot{
+    width: 30%;
+    height: 35%;
+}
+.f4 a{
+    padding: 10px;
+    margin-left: 30px;
+}
+.f4 a:hover{
+    color: #5abfab;
+}
+.f3 a:hover{
+    color: #5abfab;
+}
+.f2 a:hover{
+    color: #5abfab;
+}
+.f2 a{
+    padding: 10px;
+    color: white;
+}
+.f3 a{
+    padding: 10px;
+    color: white;
+}
+.f4 a{
+    padding: 10px;
+    color: white;
+}
+.f2 b{
+    color: #5abfab;
+}
+.f4 b{
+    color: #5abfab;
+}
+.a1{
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: justify;
+    justify-self: center;
+}
+.a2{
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+.a3{
+    width: 10%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+.as1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnfo{
+    width: 120px;
+    height: 40px;
+    margin-left: 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #5a6f80;
+}
+.sonsol{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight:400;
+}
+.sonsag{
+    width: 45%;
+    font-size: 25px;
+    align-items: center;
+    color: white    ;
+    justify-content: center;
+    display: flex;
+}
+.sonsag i{
+    padding: 10px;
+    cursor: pointer;
+}
+.sonsag i:hover{
+    color: aqua;
+}
+.men{
+    width: 20%;
+    display: none;
+}
+.menal{
+    height: 50px;
+    background-color: red;
+    display: none;
+}
+@media screen and (max-width: 760px) {
+    .menu{
+        width: 55%;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .donate{
+        display: none;
+    }
+    .men{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+    }
+    .men i{
+        cursor: pointer;
+    }
+    .navbar{
+        height: 75px;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .menal{
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        display: none;
+        font-size: 20px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        z-index: 1;
+    }
+    .menr a{
+        padding: 5px;
+        border-bottom: 1px solid #44525d;
+        border-radius: 20px;
+    }
+    .menr a:hover{
+        color: aqua;
+    }
+    .nav{
+        height: 40px;
+        display: none;
+        background-color: #5abfab;
+        justify-content: space-between;
+    }
+    .sagalt{
+        height: auto;
+        color:#5a6f80;
+        font-weight: bold;
+        border-radius: 20px;
+        justify-content: center;
+        user-select: none;
+        font-size: 50px;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .altdon{
+        height: auto;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .alt{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .one1{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .one2{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .one3{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .one{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .info{
+        height: auto;
+        background-color: #f0f8ff;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .insol{
+        width: 90%;
+        height: auto;
+        background-color: aqua;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        background-image: url('infores.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .insag{
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .basgen{
+        width: 95%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bassol{
+        width: 40%;
+        height: auto;
+        background-color: #5a6f80;
+        display: flex;
+        background-image: url('baskan.jpg');
+        background-size: cover;
+        box-shadow: 1px 1px 20px rgb(121, 121, 121);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px
+    }
+    .bassag{
+        width: 70%;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .sol{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-position: center;
+        border-radius: 50%;
+        padding: 5px;
+        background-color:rgba(255, 255, 255, 0.3)
+    }
+    .cours{
+        height: auto;
+        background-color:#ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .cours-bas{
+        width: 70%;
+        height: 10%;
+        align-items: center;
+        font-size: 50px;
+        color:#5a6f80;
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .cours-ic{
+        width: 90%;
+        height: 2000px;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .cou1{
+        width: 90%;
+        height: 30%;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .cou2{
+        width: 90%;
+        height: 30%;
+        background-color: bisque;
+        flex-direction: column;
+        display: flex;
+        border-radius: 20px;
+    }
+    .cou3{
+        width: 90%;
+        height: 30%;
+        background-color: bisque;
+        flex-direction: column;
+        border-radius: 20px;
+        display: flex;
+    }
+    .form1{
+        height: auto;
+        background-color: #5a6f80;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .formsol{
+        width: 90%;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .formsag{
+        width: 90%;
+        margin-top: 50px;
+        align-items: center;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .formbas{
+        width: 90%;
+        height: 15%;
+        font-size: 50px;
+        font-weight: bold;
+        padding: 5px;
+        color: #ffffff;
+        align-items: flex-end;
+        justify-content: center;
+        display: flex;
+    }
+    .formg5{
+        width: 90%;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 20px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        height: 30%;
+        background-color:#5a6f80;
+        display: flex;
+    }
+    .footer{
+        height: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:#44525d ;
+    }
+    .fotust{
+        height:auto;
+        background-color: #44525d;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        align-items: center;
+        font-size: 16px;
+    }
+    .f1{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        display: flex;
+    }
+    .f2{
+        height: auto;
+        flex-direction: column;
+        font-size: 10px;
+        text-align: justify;
+        justify-content: center;
+        color: white;
+        display: flex;
+    }
+    .f3{
+        height: auto;
+        flex-direction: column;
+        font-size: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .f4{
+        height: auto;
+        font-size: 10px;
+        padding: 5px;
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btnfo{
+        width: 100px;
+        height: 30px;
+        margin-left: 35px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        background-color: #5a6f80;
+    }
+    .sonsol p{
+        font-size: 10px;
+        font-weight:400;
+        margin-left: 10px;
+    }
+    .sonsag{
+        width: 45%;
+        font-size: 25px;
+        align-items: center;
+        font-size: 15px;
+        color: white    ;
+        justify-content: center;
+        display: flex;
+    }
+}
